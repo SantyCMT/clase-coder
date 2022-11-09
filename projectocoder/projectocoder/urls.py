@@ -15,7 +15,7 @@ Including another URLconf
 """
 from unittest.mock import patch
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from projectocoder.views import *
 
 
@@ -26,7 +26,9 @@ urlpatterns = [
     path('hoy/<nombre>/', dia_hoy),
     path('nacimiento/<edad>/', calcular_año),
     path('inicio/', vista_plantilla2),
-    path("alumnos/", vista_listado_alumnos2)
+    path("alumnos/", vista_listado_alumnos2),
+
+    path("coder/", include("appcoder.urls"))
 
 
 ]

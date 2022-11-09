@@ -13,10 +13,8 @@ def vista_saludo(request):
     """
 )
 
-
 def iniciar_sesion(request):
     return HttpResponse("pasame tu wp")
-
 
 def dia_hoy(request, nombre):
     hoy = datetime.now()
@@ -24,14 +22,12 @@ def dia_hoy(request, nombre):
     respuesta = f"Hoy es {hoy} - Bienvenid@ {nombre}"
     return HttpResponse(respuesta)
 
- 
 def calcular_año(request, edad):
     edad=int(edad)
 
 
     fecha_nacimiento= datetime.now().year - edad
     return HttpResponse(fecha_nacimiento)   
-
 
 def vista_plantilla(request):
     archivo = open(r"D:\coder\17_django\projectocoder\projectocoder\templates\plantilla_bonita.html")
@@ -47,8 +43,6 @@ def vista_plantilla(request):
     documento = plantilla.render(contexto)
 
     return HttpResponse(documento)
-
-
 
 def vista_listado_alumnos(request):
     
@@ -67,7 +61,6 @@ def vista_listado_alumnos(request):
 
     return HttpResponse(documento)
 
-
 def vista_listado_alumnos2(request):
     listado_alumnos = ["Leonel Gareis", "Santiago ortiz", "Agustin Garcia", "Cristian Franco", "Barbara pelaez"]
     datos = {"tecnologia": "Python", "listado_alumnos": listado_alumnos}
@@ -77,7 +70,6 @@ def vista_listado_alumnos2(request):
     documento= plantilla.render(datos)
     
     return HttpResponse(documento)
-
 
 def vista_plantilla2(request):
 

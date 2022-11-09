@@ -2,7 +2,6 @@ from pyexpat import model
 from unittest.util import _MAX_LENGTH
 from django.db import models
 
-# Create your models here.
 
 class Curso(models.Model):
 
@@ -19,7 +18,7 @@ class Profesor(models.Model):
     apellido = models.CharField(max_length=100)
     email = models.EmailField()
     profesion = models.CharField(max_length=100)
-    
+
 class Entregable(models.Model):
     nombre = models.CharField(max_length=100)
     fecha_de_entrega = models.DateField()

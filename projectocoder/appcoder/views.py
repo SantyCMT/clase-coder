@@ -8,16 +8,16 @@ def inicio(request):
 
 
 def Estudiantes(request):
-    return HttpResponse("estudiantes")
+    return render(request, "appcoder/estudiantes.html")
     
 def Profesor(request):
-    return HttpResponse("Profesor")
+    return render(request, "appcoder/profesores.html")
 
 def Curso(request):
-    return HttpResponse("Curso")
+    return render(request, "appcoder/cursos.html")
 
 def Catedra(request):
-    return HttpResponse("Catedra")
+    return render(request, "appcoder/catedra.html")
 
 def Entrega(request):
-    return HttpResponse("Comicion")
+    return render(request, "appcoder/entregables.html")

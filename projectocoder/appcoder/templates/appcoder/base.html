@@ -21,11 +21,12 @@
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                <a class="navbar-brand" href="#">Estudiantes</a>
-                <a class="navbar-brand" href="#">Curso</a>
-                <a class="navbar-brand" href="#">Profesor</a>
-                <a class="navbar-brand" href="#">Catedra</a>
-                <a class="navbar-brand" href="#">Entrega</a>
+                <a class="navbar-brand" href="{% url 'coder-inicio' %}">Inicio</a>
+                <a class="navbar-brand" href="{% url 'coder-estudiantes' %}">Estudiantes</a>
+                <a class="navbar-brand" href="{% url 'coder-curso' %}">Curso</a>
+                <a class="navbar-brand" href="{% url 'coder-profesor' %}">Profesor</a>
+                <a class="navbar-brand" href="{% url 'coder-catedra' %}">Catedra</a>
+                <a class="navbar-brand" href="{% url 'coder-entrega' %}">Entrega</a>
                 <a class="btn btn-primary" href="#signup">Sign Up</a>
             </div>
         </nav>

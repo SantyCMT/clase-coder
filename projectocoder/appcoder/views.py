@@ -19,5 +19,5 @@ def Curso(request):
 def Catedra(request):
     return HttpResponse("Catedra")
 
-def Comicion(request):
+def Entrega(request):
     return HttpResponse("Comicion")

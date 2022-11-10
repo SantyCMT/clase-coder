@@ -7,5 +7,5 @@ urlpatterns = [
     path("Profesor/", Profesor),
     path("Curso/", Curso),
     path("Catedra/", Catedra),
-    path("Comicion/", Comicion),
+    path("Entrega/", Entrega),
 ]
